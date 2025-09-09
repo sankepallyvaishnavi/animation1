@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC GRIDS</title>
+    <style>
+        .container{
+            display:grid;
+            background-color: aqua;
+grid-template-columns: 1fr 1fr 2fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-areas: "grid1 grid2 grid3"
+                      "grid1 grid4 grid5"
+                      "grid6 grid4 grid5";
+                      
+.grid1{
+    grid-area: grid1;
+}
+.grid2{
+    grid-area: grid2;
+}
+.grid3{
+    grid-area: grid3;
+}
+.grid4{
+    grid-area: grid4;
+}
+.grid5{
+    grid-area: grid5;
+}
+.grid6{
+    grid-area: grid6;
+}
+ .grid7{
+    grid-area:grid7 ;
+ }
+ .grid8{
+    grid-area: grid8;
+ }
+    .grid{
+        background-color: bisque;
+        height: auto;
+        width: auto;
+        border-color: black;
+        border-width: 5px;
+        border-style: solid;
+    }
+        </style>
+</head>
+<body>
+    <div class="container">
+    <div class="grid grid1">grid1</div>
+    <div class="grid grid2">grid2</div>
+    <div class="grid grid3">grid3</div>
+    <div class="grid grid4">grid4</div>
+    <div class="grid grid5">grid5</div>
+    <div class="grid grid6">grid6</div>
+    
+    </div>
+</body>
+</html>
